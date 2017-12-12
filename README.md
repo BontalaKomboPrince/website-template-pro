@@ -1,2 +1,3 @@
-# website-template-pro
-Website Template Pro
+# Website Template Pro
+
+[Preview](https://laurenthu.github.io/website-template-pro/)
