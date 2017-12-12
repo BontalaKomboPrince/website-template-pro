@@ -1,0 +1,37 @@
+/*
+Error: Invalid CSS after "<": expected "{", was "!doctype html>"
+        on line 1 of /Users/utilisateur/Desktop/Octocat/becode_projects/SASS/website-template-pro/website-template-pro/index.html
+
+1: <!doctype html>
+2: <html lang="en">
+3:   <head>
+4:     <!-- Required meta tags -->
+5:     <meta charset="utf-8">
+6:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+Backtrace:
+/Users/utilisateur/Desktop/Octocat/becode_projects/SASS/website-template-pro/website-template-pro/index.html:1
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1208:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1203:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:677:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:670:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:686:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:391:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"<\": expected \"{\", was \"!doctype html>\"\A         on line 1 of /Users/utilisateur/Desktop/Octocat/becode_projects/SASS/website-template-pro/website-template-pro/index.html\A \A 1: <!doctype html>\A 2: <html lang=\"en\">\A 3:   <head>\A 4:     <!-- Required meta tags -->\A 5:     <meta charset=\"utf-8\">\A 6:     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">"; }
