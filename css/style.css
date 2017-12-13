@@ -17,6 +17,11 @@ a {
   a:hover {
     color: #0a0a0a; }
 
+hr {
+  width: 10vw;
+  border: 1.5px solid #3e4bfe;
+  margin: 6.6666666667vh auto; }
+
 /*** Restyling ***/
 .container-fluid {
   padding-right: 0px;
@@ -34,9 +39,6 @@ a {
     background-color: #0a0a0a;
     border-color: #0a0a0a;
     color: white; }
-
-.card {
-  border: none; }
 
 section.container, section.container-fluid {
   padding: 10vh 0vw; }
@@ -105,6 +107,8 @@ header {
 section.asset .icon {
   font-size: 2.5em;
   color: #3e4bfe; }
+section.asset .card {
+  border: none; }
 section.asset .card-body {
   font-size: .9em;
   padding: 0px; }
@@ -127,7 +131,8 @@ section.your-idea {
   background: linear-gradient(to right, #3e4bfe 0%, #3e4bfe 50%, #0a0a0a 50.01%, #0a0a0a 100%); }
   section.your-idea .card {
     color: white;
-    background-color: transparent; }
+    background-color: transparent;
+    border: none; }
     section.your-idea .card .card-title {
       font-size: 2em;
       font-weight: 600;
@@ -151,6 +156,45 @@ section.your-idea {
     section.your-idea .row .progress {
       height: 1.5vh;
       border-radius: 0px; }
+
+section.portofolio {
+  padding: 15vh 0vw; }
+  section.portofolio h3 {
+    color: #999999;
+    font-size: 1em; }
+  section.portofolio h2 {
+    font-weight: 600; }
+  section.portofolio .card-deck {
+    margin-bottom: 3.3333333333vh; }
+  section.portofolio .card {
+    text-align: center;
+    border: 1px solid #ededed; }
+  section.portofolio h4 {
+    color: #3d3d3d;
+    font-size: 1em;
+    text-transform: uppercase; }
+  section.portofolio h6 {
+    font-size: .9em;
+    font-weight: 300; }
+
+section.features {
+  background-color: #f2f2f2; }
+  section.features h3 {
+    color: gray;
+    font-size: 1em; }
+  section.features h2 {
+    font-weight: 600; }
+  section.features .card-deck {
+    margin-bottom: 3.3333333333vh; }
+  section.features .card {
+    background: transparent;
+    border: none; }
+    section.features .card svg {
+      color: #3e4bfe;
+      font-size: 3.5em;
+      margin-bottom: 3.3333333333vh; }
+    section.features .card h4 {
+      font-size: 1.2em; }
 
 .footer {
   background-color: #1A1D1F; }
