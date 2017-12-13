@@ -1,6 +1,6 @@
 // Colors
 $light-color:rgba(255,255,255,1);
-$dark-color:rgba(21,21,21,1);
+$dark-color:rgba(10,10,10,1);
 
 $custom-primary: rgba(62,75,254,1);
 
@@ -24,3 +24,7 @@ $title-font: 'Poppins', sans-serif;
 $default-transition-properties: all;
 $default-transition-duration: .2s;
 $default-transition-effect: ease-in-out;
+
+//
+$default-margin-y:10vh;
+$default-margin-x:0vw;

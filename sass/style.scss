@@ -52,8 +52,8 @@ a {
   border:none;
 }
 
-main section.container, main section.container-fluid {
-  padding: 10vh 0vw;
+section.container, section.container-fluid {
+  padding: $default-margin-y $default-margin-x;
 }
 
 /*** Styling ***/
@@ -96,7 +96,7 @@ main section.container, main section.container-fluid {
     font-size:$navbar-font-size;
 
     img {
-      width:120px;
+      max-width:120px;
     }
     .navbar-nav {
 
@@ -143,7 +143,7 @@ header {
   }
 }
 
-.asset {
+section.asset {
 
   .icon {
     font-size:2.5em;
@@ -161,7 +161,7 @@ header {
 
 }
 
-.welcome {
+section.welcome {
   padding-bottom:0px !important;
   background-color: darken($bg-color-light,5%);
 
@@ -176,5 +176,27 @@ header {
     }
   }
 }
+
+section.your-idea {
+  padding: ($default-margin-y * 2) $default-margin-x;
+  @include bg-fifty-fifty($custom-primary,$dark-color);
+
+  .card {
+    color:$light-color;
+    background-color:transparent;
+
+    .card-title {
+      font-size:2em;
+      font-weight: 600;
+      margin-bottom:5vh;
+    }
+
+    .card-subtitle {
+      color:darken($light-color,10%);
+    }
+
+  }
+}
+
 
 @import "footer";
