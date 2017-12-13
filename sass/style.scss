@@ -177,4 +177,9 @@ header {
   }
 }
 
+.your-idea {
+  @include bg-fifty-fifty($custom-primary,$dark-color);
+}
+
+
 @import "footer";

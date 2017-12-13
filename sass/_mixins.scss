@@ -1,3 +1,7 @@
 @mixin default-transition($properties:$default-transition-properties,$duration:$default-transition-duration,$effect:$default-transition-effect) {
   transition: $properties $duration $effect;
 }
+
+@mixin bg-fifty-fifty($left,$right){
+  background: linear-gradient(to right, $left 0%, $left 50%, $right 50.01%, $right 100%);
+}
