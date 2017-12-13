@@ -57,7 +57,10 @@ section.container, section.container-fluid {
         color: black;
         text-decoration: none; }
       .mainNav .mainNavTop a svg {
-        color: #0a0a0a; }
+        margin-bottom: -.1em;
+        font-size: 1.5em;
+        color: #0a0a0a;
+        margin-right: .4vw; }
     .mainNav .mainNavTop .phone {
       border-right: 1px solid #dbdbdb; }
     .mainNav .mainNavTop .address a {
@@ -132,7 +135,17 @@ section.your-idea {
     section.your-idea .card .card-subtitle {
       color: #e6e6e6; }
     section.your-idea .card .btn {
-      border-color: 1px solid white; }
+      margin-top: 5vh;
+      border: 2px solid white; }
+      section.your-idea .card .btn:hover {
+        background-color: white;
+        color: #0a0a0a; }
+  section.your-idea .row {
+    margin-bottom: 4vh;
+    font-weight: 400; }
+    section.your-idea .row .progress {
+      height: 1.5vh;
+      border-radius: 0px; }
 
 .footer {
   background-color: #1A1D1F; }

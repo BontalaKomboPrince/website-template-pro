@@ -76,7 +76,10 @@ section.container, section.container-fluid {
       }
 
       svg {
+        margin-bottom: -.1em;
+        font-size: 1.5em;
         color: $dark-color;
+        margin-right:.4vw;
       }
 
     }
@@ -184,22 +187,32 @@ section.your-idea {
   .card {
     color:$light-color;
     background-color:transparent;
-
     .card-title {
       font-size:2em;
       font-weight: 600;
       margin-bottom:5vh;
     }
-
     .card-subtitle {
       color:darken($light-color,10%);
     }
-
     .btn {
-      border-color:1px solid $light-color;
+      margin-top:5vh;
+      border:2px solid $light-color;
+      &:hover {
+        background-color: $light-color;
+        color:$dark-color;
+      }
     }
-
   }
+  .row {
+    margin-bottom: 4vh;
+    font-weight: 400;
+    .progress {
+      height:1.5vh;
+      border-radius:0px;
+    }
+  }
+
 }
 
 
