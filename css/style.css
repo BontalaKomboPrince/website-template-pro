@@ -134,4 +134,16 @@ section.your-idea {
     section.your-idea .card .btn {
       border-color: 1px solid white; }
 
+.footer {
+  background-color: #1A1D1F; }
+  .footer .row {
+    padding-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px; }
+    .footer .row .col-md-3 .icon img {
+      width: 30px; }
+    .footer .row .col-md-3 div {
+      color: grey;
+      margin-top: 20px; }
+
 /*# sourceMappingURL=style.css.map */
