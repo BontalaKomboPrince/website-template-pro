@@ -20,7 +20,7 @@ a {
 hr {
   width: 10vw;
   border: 1.5px solid #3e4bfe;
-  margin: 6.6666666667vh auto; }
+  margin: 6.6666666667vh auto 8.3333333333vh; }
 
 /*** Restyling ***/
 .container-fluid {
@@ -185,16 +185,19 @@ section.features {
   section.features h2 {
     font-weight: 600; }
   section.features .card-deck {
-    margin-bottom: 3.3333333333vh; }
+    margin-bottom: 5vh; }
   section.features .card {
     background: transparent;
     border: none; }
     section.features .card svg {
       color: #3e4bfe;
       font-size: 3.5em;
-      margin-bottom: 3.3333333333vh; }
+      margin-bottom: 2.5vh; }
     section.features .card h4 {
       font-size: 1.2em; }
+    section.features .card .card-text {
+      color: #4a4a4a;
+      font-size: .9em; }
 
 .footer {
   background-color: #1A1D1F; }

@@ -31,7 +31,7 @@ a {
 hr {
   width:10vw;
   border:1.5px solid $custom-primary;
-  margin:($default-margin-y / 1.5) auto;
+  margin:($default-margin-y / 1.5) auto ($default-margin-y / 1.2);
 }
 
 /*** Restyling ***/
@@ -268,7 +268,7 @@ section.features {
     font-weight: 600;
   }
   .card-deck {
-    margin-bottom: ($default-margin-y / 3);
+    margin-bottom: ($default-margin-y / 2);
   }
   .card {
     background:transparent;
@@ -277,10 +277,14 @@ section.features {
     svg {
       color:$custom-primary;
       font-size:3.5em;
-      margin-bottom: ($default-margin-y / 3);
+      margin-bottom: ($default-margin-y / 4);
     }
     h4 {
       font-size:1.2em;
+    }
+    .card-text {
+      color:lighten($dark-color, 25%);
+      font-size:.9em;
     }
 
   }
