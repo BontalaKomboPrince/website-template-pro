@@ -1,3 +1,64 @@
+/*** General Properties ***/
+* {
+  box-sizing: border-box; }
 
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif; }
+
+/*** Restyling ***/
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px; }
+
+/*** Styling ***/
+.mainNav {
+  background-color: white; }
+  .mainNav .mainNavTop {
+    font-size: 0.75em;
+    color: #999999;
+    border-bottom: 1px solid #dbdbdb; }
+    .mainNav .mainNavTop a {
+      display: inline-block;
+      padding: 2vh 0vw;
+      color: #999999; }
+      .mainNav .mainNavTop a:hover {
+        color: black;
+        text-decoration: none; }
+      .mainNav .mainNavTop a svg {
+        color: #151515; }
+    .mainNav .mainNavTop .phone {
+      border-right: 1px solid #dbdbdb; }
+    .mainNav .mainNavTop .address a {
+      min-width: 185px;
+      border-left: 1px solid #dbdbdb; }
+  .mainNav nav {
+    padding: 3vh 0vw;
+    font-size: 0.75em; }
+    .mainNav nav img {
+      width: 120px; }
+    .mainNav nav .navbar-nav .nav-link {
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #777777;
+      padding-left: 1vw;
+      padding-right: 1vw; }
+      .mainNav nav .navbar-nav .nav-link:hover {
+        color: #3e4bfe; }
+    .mainNav nav .navbar-nav .nav-purchase {
+      margin-left: 2vw; }
+
+header {
+  margin-top: 40px;
+  height: 100%;
+  background: url("../img/man-in-sofa.jpg");
+  background-size: cover;
+  background-position: center; }
 
 /*# sourceMappingURL=style.css.map */

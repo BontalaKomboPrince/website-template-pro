@@ -1,0 +1,27 @@
+// Colors
+$light-color:rgba(255,255,255,1);
+$dark-color:rgba(21,21,21,1);
+
+$custom-primary: rgba(62,75,254,1);
+
+// navbar
+$nav-border-color: rgba(219,219,219,1);
+$navbar-border: 1px solid $nav-border-color;
+$navbar-top-link-color:rgba(153,153,153,1);
+$navbar-top-link-color-hover:rgba(0,0,0,1);
+$navbar-link-color:rgba(119,119,119,1);
+$navbar-link-color-hover:$custom-primary;
+$navbar-font-size:0.75em;
+
+//background
+$bg-color-light:rgba(255,255,255,1);
+
+
+// Text
+$main-font: 'Poppins', sans-serif;
+$title-font: 'Poppins', sans-serif;
+
+// Transition
+$default-transition-properties: all;
+$default-transition-duration: .3s;
+$default-transition-effect: ease-in-out;

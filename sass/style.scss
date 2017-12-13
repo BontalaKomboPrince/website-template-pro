@@ -1,1 +1,99 @@
-$cprimary: rgba(62,75,254,1);
+// Mixins
+@import "mixins";
+
+// Variables
+@import "variables";
+
+
+// Main CSS
+
+/*** General Properties ***/
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  width:100%;
+  height: 100%;
+}
+body {
+  font-family:$main-font;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: $title-font;
+}
+/*** Restyling ***/
+.container-fluid {
+  padding-right:0px;
+  padding-left:0px;
+}
+
+/*** Styling ***/
+.mainNav {
+  background-color:$bg-color-light;
+
+  .mainNavTop {
+
+    font-size:$navbar-font-size;
+    color:$navbar-top-link-color;
+    border-bottom: 1px solid $nav-border-color;
+    a {
+      display:inline-block;
+      padding:2vh 0vw;
+      color:$navbar-top-link-color;
+
+      &:hover {
+        color:$navbar-top-link-color-hover;
+        text-decoration:none;
+      }
+
+      svg {
+        color: $dark-color;
+      }
+
+    }
+
+    .phone {
+      border-right: 1px solid $nav-border-color;
+    }
+    .address a {
+      min-width: 185px;
+      border-left: 1px solid $nav-border-color;
+    }
+
+  } // end mainNavTop
+
+  nav {
+    padding:3vh 0vw;
+    font-size:$navbar-font-size;
+
+    img {
+      width:120px;
+    }
+    .navbar-nav {
+
+      .nav-link {
+        font-weight: 300;
+        text-transform: uppercase;
+        color:$navbar-link-color;
+        padding-left:1vw;
+        padding-right:1vw;
+        &:hover {
+          color:$navbar-link-color-hover;
+        }
+      }
+      .nav-purchase {
+        margin-left: 2vw;
+      }
+    }
+  }
+
+}
+
+header {
+  margin-top:40px;
+  height: 100%;
+  background:url('../img/man-in-sofa.jpg');
+  background-size: cover;
+  background-position: center;
+}

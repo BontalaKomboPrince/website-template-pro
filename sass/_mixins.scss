@@ -1,0 +1,3 @@
+@mixin default-transition($properties:$default-transition-properties,$duration:$default-transition-duration,$effect:$default-transition-effect) {
+  transition: $properties $duration $effect;
+}
