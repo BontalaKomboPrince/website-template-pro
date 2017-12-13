@@ -12,6 +12,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif; }
 
+a {
+  color: #3e4bfe; }
+  a:hover {
+    color: #151515; }
+
 /*** Restyling ***/
 .container-fluid {
   padding-right: 0px;
@@ -94,16 +99,23 @@ header {
     margin-top: 4vh; }
 
 .asset .icon {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #3e4bfe; }
 .asset .card-body {
+  font-size: .9em;
   padding: 0px; }
 .asset h4 {
   font-size: 1.5em;
-  margin-top: 0px; }
+  margin-top: 1.5vh; }
 
 .welcome {
   padding-bottom: 0px !important;
-  background-color: #e6e6e6; }
+  background-color: #f2f2f2; }
+  .welcome h2 {
+    font-weight: 500; }
+  .welcome .row div {
+    margin: 4vh auto; }
+    .welcome .row div:last-child {
+      margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

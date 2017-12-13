@@ -22,6 +22,12 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: $title-font;
 }
+a {
+  color:$custom-primary;
+  &:hover{
+    color:$dark-color;
+  }
+}
 
 /*** Restyling ***/
 .container-fluid {
@@ -139,21 +145,33 @@ header {
 .asset {
 
   .icon {
-    font-size:2em;
+    font-size:2.5em;
     color:$custom-primary;
   }
   .card-body{
+    font-size:.9em;
     padding:0px;
   }
 
   h4 {
     font-size:1.5em;
-    margin-top: 0px;
+    margin-top:1.5vh;
   }
 
 }
 
 .welcome {
   padding-bottom:0px !important;
-  background-color: darken($bg-color-light,10%);
+  background-color: darken($bg-color-light,5%);
+
+  h2 {
+    font-weight: 500;
+  }
+
+  .row div {
+    margin:4vh auto;
+    &:last-child{
+      margin:0 auto;
+    }
+  }
 }
