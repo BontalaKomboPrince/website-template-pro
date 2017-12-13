@@ -27,6 +27,20 @@ h1,h2,h3,h4,h5,h6 {
   padding-right:0px;
   padding-left:0px;
 }
+.btn {
+  padding:1.5vh 2vw;
+  font-size: .8em;
+}
+.btn-primary {
+  background-color:$custom-primary;
+  border-color: $custom-primary;
+  @include default-transition();
+  &:hover{
+    background-color: $dark-color;
+    border-color: $dark-color;
+    color:$light-color;
+  }
+}
 
 /*** Styling ***/
 .mainNav {
@@ -41,7 +55,7 @@ h1,h2,h3,h4,h5,h6 {
       display:inline-block;
       padding:2vh 0vw;
       color:$navbar-top-link-color;
-
+      @include default-transition();
       &:hover {
         color:$navbar-top-link-color-hover;
         text-decoration:none;
@@ -73,16 +87,17 @@ h1,h2,h3,h4,h5,h6 {
     .navbar-nav {
 
       .nav-link {
-        font-weight: 300;
         text-transform: uppercase;
         color:$navbar-link-color;
-        padding-left:1vw;
-        padding-right:1vw;
+        padding:1.5vh 1.5vw;
+        @include default-transition();
         &:hover {
           color:$navbar-link-color-hover;
         }
       }
-      .nav-purchase {
+      .nav-purchase .btn {
+        color:$light-color;
+        font-size:1em;
         margin-left: 2vw;
       }
     }
@@ -91,9 +106,21 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 header {
-  margin-top:40px;
+  margin-top:70px;
   height: 100%;
   background:url('../img/man-in-sofa.jpg');
   background-size: cover;
   background-position: center;
+  color:$light-color;
+  .icon {
+    font-size: 1.5em;
+    margin-bottom: 3vh;
+  }
+  h1 {
+    font-size:5em;
+    font-weight: 700;
+  }
+  p {
+    font-size:.8em;
+  }
 }
