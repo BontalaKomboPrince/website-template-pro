@@ -196,6 +196,7 @@ section.your-idea {
       color:darken($light-color,10%);
     }
     .btn {
+      font-weight: 500;
       margin-top:5vh;
       border:2px solid $light-color;
       &:hover {
@@ -207,7 +208,14 @@ section.your-idea {
   .row {
     margin-bottom: 4vh;
     font-weight: 400;
-    
+    .col-right {
+      .row {
+        font-size:.9em;
+        .col-6 {
+          margin-bottom: 1vh;
+        }
+      }
+    }
     .progress {
       height:1.5vh;
       border-radius:0px;

@@ -135,6 +135,7 @@ section.your-idea {
     section.your-idea .card .card-subtitle {
       color: #e6e6e6; }
     section.your-idea .card .btn {
+      font-weight: 500;
       margin-top: 5vh;
       border: 2px solid white; }
       section.your-idea .card .btn:hover {
@@ -143,6 +144,10 @@ section.your-idea {
   section.your-idea .row {
     margin-bottom: 4vh;
     font-weight: 400; }
+    section.your-idea .row .col-right .row {
+      font-size: .9em; }
+      section.your-idea .row .col-right .row .col-6 {
+        margin-bottom: 1vh; }
     section.your-idea .row .progress {
       height: 1.5vh;
       border-radius: 0px; }
