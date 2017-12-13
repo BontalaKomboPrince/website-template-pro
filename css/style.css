@@ -38,7 +38,7 @@ a {
 .card {
   border: none; }
 
-main section.container, main section.container-fluid {
+section.container, section.container-fluid {
   padding: 10vh 0vw; }
 
 /*** Styling ***/
@@ -99,27 +99,37 @@ header {
   header .btn {
     margin-top: 4vh; }
 
-.asset .icon {
+section.asset .icon {
   font-size: 2.5em;
   color: #3e4bfe; }
-.asset .card-body {
+section.asset .card-body {
   font-size: .9em;
   padding: 0px; }
-.asset h4 {
+section.asset h4 {
   font-size: 1.5em;
   margin-top: 1.5vh; }
 
-.welcome {
+section.welcome {
   padding-bottom: 0px !important;
   background-color: #f2f2f2; }
-  .welcome h2 {
+  section.welcome h2 {
     font-weight: 500; }
-  .welcome .row div {
+  section.welcome .row div {
     margin: 4vh auto; }
-    .welcome .row div:last-child {
+    section.welcome .row div:last-child {
       margin: 0 auto; }
 
-.your-idea {
+section.your-idea {
+  padding: 20vh 0vw;
   background: linear-gradient(to right, #3e4bfe 0%, #3e4bfe 50%, #0a0a0a 50.01%, #0a0a0a 100%); }
+  section.your-idea .card {
+    color: white;
+    background-color: transparent; }
+    section.your-idea .card .card-title {
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 5vh; }
+    section.your-idea .card .card-subtitle {
+      color: #e6e6e6; }
 
 /*# sourceMappingURL=style.css.map */
