@@ -290,4 +290,13 @@ section.features {
   }
 }
 
+section.overview {
+  background:
+        linear-gradient(to right, $custom-primary 0%, $custom-primary 33.33%, rgba(0,0,0,.5) 33.34%, rgba(0,0,0,.5) 66.66% ,$dark-color 66.67%, $dark-color 100%),
+        url('../img/mountain-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 @import "footer";

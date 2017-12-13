@@ -199,6 +199,12 @@ section.features {
       color: #4a4a4a;
       font-size: .9em; }
 
+section.overview {
+  background: linear-gradient(to right, #3e4bfe 0%, #3e4bfe 33.33%, rgba(0, 0, 0, 0.5) 33.34%, rgba(0, 0, 0, 0.5) 66.66%, #0a0a0a 66.67%, #0a0a0a 100%), url("../img/mountain-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
 .footer {
   background-color: #1A1D1F; }
   .footer .row {
