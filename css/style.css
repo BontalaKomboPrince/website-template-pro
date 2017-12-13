@@ -86,6 +86,7 @@ header {
   background: url("../img/man-in-sofa.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: white; }
   header .icon {
     font-size: 1.5em;
