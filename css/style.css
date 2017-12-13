@@ -131,5 +131,7 @@ section.your-idea {
       margin-bottom: 5vh; }
     section.your-idea .card .card-subtitle {
       color: #e6e6e6; }
+    section.your-idea .card .btn {
+      border-color: 1px solid white; }
 
 /*# sourceMappingURL=style.css.map */
