@@ -126,36 +126,41 @@ section.welcome {
     section.welcome .row div:last-child {
       margin: 0 auto; }
 
-section.your-idea {
-  padding: 20vh 0vw;
-  background: linear-gradient(to right, #3e4bfe 0%, #3e4bfe 50%, #0a0a0a 50.01%, #0a0a0a 100%); }
-  section.your-idea .card {
-    color: white;
-    background-color: transparent;
-    border: none; }
-    section.your-idea .card .card-title {
-      font-size: 2em;
-      font-weight: 600;
-      margin-bottom: 5vh; }
-    section.your-idea .card .card-subtitle {
-      color: #e6e6e6; }
-    section.your-idea .card .btn {
-      font-weight: 500;
-      margin-top: 5vh;
-      border: 2px solid white; }
-      section.your-idea .card .btn:hover {
-        background-color: white;
-        color: #0a0a0a; }
-  section.your-idea .row {
-    margin-bottom: 4vh;
-    font-weight: 400; }
-    section.your-idea .row .col-right .row {
-      font-size: .9em; }
-      section.your-idea .row .col-right .row .col-6 {
-        margin-bottom: 1vh; }
-    section.your-idea .row .progress {
-      height: 1.5vh;
-      border-radius: 0px; }
+section.your-idea .col-left, section.your-idea .col-right, section.your-idea section.overview .col-center, section.overview section.your-idea .col-center {
+  padding: 20vh 7vw;
+  -webkit-box-flex: 1;
+          flex: 1; }
+section.your-idea .col-left {
+  background-color: #3e4bfe; }
+section.your-idea .col-right {
+  background-color: #0a0a0a; }
+section.your-idea .card {
+  color: white;
+  background-color: transparent;
+  border: none; }
+  section.your-idea .card .card-title {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 5vh; }
+  section.your-idea .card .card-subtitle {
+    color: #e6e6e6; }
+  section.your-idea .card .btn {
+    font-weight: 500;
+    margin-top: 5vh;
+    border: 2px solid white; }
+    section.your-idea .card .btn:hover {
+      background-color: white;
+      color: #0a0a0a; }
+section.your-idea .row {
+  margin-bottom: 4vh;
+  font-weight: 400; }
+  section.your-idea .row .col-right .row {
+    font-size: .9em; }
+    section.your-idea .row .col-right .row .col-6 {
+      margin-bottom: 1vh; }
+  section.your-idea .row .progress {
+    height: 1.5vh;
+    border-radius: 0px; }
 
 section.portofolio {
   padding: 15vh 0vw; }
@@ -200,10 +205,51 @@ section.features {
       font-size: .9em; }
 
 section.overview {
-  background: linear-gradient(to right, #3e4bfe 0%, #3e4bfe 33.33%, rgba(0, 0, 0, 0.5) 33.34%, rgba(0, 0, 0, 0.5) 66.66%, #0a0a0a 66.67%, #0a0a0a 100%), url("../img/mountain-1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mountain-1.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding: 0px;
+  color: white; }
+  section.overview .col-left, section.overview .col-center, section.overview .col-right {
+    padding: 20vh 5vw;
+    -webkit-box-flex: 1;
+            flex: 1; }
+  section.overview .col-left {
+    background-color: #3e4bfe; }
+    section.overview .col-left .btn {
+      font-size: .8em;
+      background-color: white;
+      color: #0a0a0a;
+      border-width: 2px;
+      transition: all 0.2s ease-in-out; }
+      section.overview .col-left .btn:hover {
+        background-color: #0a0a0a;
+        color: white; }
+  section.overview .col-center .btn {
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    border-color: white;
+    border-width: 2px; }
+    section.overview .col-center .btn:hover {
+      background-color: white;
+      color: #0a0a0a; }
+  section.overview .col-right {
+    background-color: #0a0a0a;
+    border-width: 2px; }
+    section.overview .col-right .btn:hover {
+      background-color: white;
+      color: #0a0a0a; }
+  section.overview .card-title {
+    font-weight: 700;
+    margin-bottom: 8.3333333333vh; }
+  section.overview .card-text {
+    font-weight: 300;
+    font-size: .9em;
+    margin-bottom: 8.3333333333vh; }
+
+section.partner img {
+  width: 50px; }
 
 .footer {
   background-color: #1A1D1F; }

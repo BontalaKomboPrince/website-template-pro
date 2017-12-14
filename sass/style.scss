@@ -187,8 +187,19 @@ section.welcome {
 }
 
 section.your-idea {
-  padding: ($default-margin-y * 2) $default-margin-x;
-  @include bg-fifty-fifty($custom-primary,$dark-color);
+  %pdn {
+    padding: ($default-margin-y * 2) 7vw;
+    flex:1;
+  }
+  // @include bg-fifty-fifty($custom-primary,$dark-color);
+  .col-left {
+    @extend %pdn;
+    background-color: $custom-primary;
+  }
+  .col-right {
+    @extend %pdn;
+    background-color: $dark-color;
+  }
 
   .card {
     color:$light-color;
@@ -292,11 +303,76 @@ section.features {
 
 section.overview {
   background:
-        linear-gradient(to right, $custom-primary 0%, $custom-primary 33.33%, rgba(0,0,0,.5) 33.34%, rgba(0,0,0,.5) 66.66% ,$dark-color 66.67%, $dark-color 100%),
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
         url('../img/mountain-1.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding:0px;
+  color:$light-color;
+
+  %pdn {
+    padding: ($default-margin-y * 2) 5vw;
+    flex:1;
+  }
+  .col-left {
+    @extend %pdn;
+    background-color: $custom-primary;
+
+    .btn {
+      font-size:.8em;
+      background-color: $light-color;
+      color:$dark-color;
+      border-width: 2px;
+      @include default-transition();
+      &:hover{
+        background-color: $dark-color;
+        color:$light-color;
+      }
+    }
+  }
+  .col-center {
+    @extend %pdn;
+
+    .btn {
+      background-color: transparent;
+      @include default-transition();
+      border-color: $light-color;
+      border-width: 2px;
+      &:hover{
+        background-color: $light-color;
+        color:$dark-color;
+      }
+    }
+
+  }
+  .col-right {
+    @extend %pdn;
+    background-color: $dark-color;
+    border-width: 2px;
+    .btn {
+      &:hover{
+        background-color: $light-color;
+        color:$dark-color;
+      }
+    }
+  }
+  .card-title {
+    font-weight:700;
+    margin-bottom:($default-margin-y / 1.2);
+  }
+  .card-text {
+    font-weight: 300;
+    font-size:.9em;
+    margin-bottom:($default-margin-y / 1.2);
+  }
+
+}
+
+section.partner {
+  img {
+    width:50px;
+  }
 }
 
 @import "footer";
