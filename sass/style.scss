@@ -29,9 +29,9 @@ a {
   }
 }
 hr {
-  width:10vw;
+  width:$default-x;
   border:1.5px solid $custom-primary;
-  margin:($default-margin-y / 1.5) auto ($default-margin-y / 1.2);
+  margin:($default-y / 1.5) auto ($default-y / 1.2);
 }
 
 /*** Restyling ***/
@@ -40,13 +40,13 @@ hr {
   padding-left:0px;
 }
 .btn {
-  padding:1.5vh 2vw;
+  padding:1.5vh ($default-x / 5);
   font-size: .8em;
 }
 .btn-primary {
   background-color:$custom-primary;
   border-color: $custom-primary;
-  @include default-transition();
+  @include transition();
   &:hover{
     background-color: $dark-color;
     border-color: $dark-color;
@@ -56,7 +56,7 @@ hr {
 
 
 section.container, section.container-fluid {
-  padding: $default-margin-y $default-margin-x;
+  padding: $default-y 0;
 }
 
 /*** Styling ***/
@@ -72,7 +72,7 @@ section.container, section.container-fluid {
       display:inline-block;
       padding:2vh 0vw;
       color:$navbar-top-link-color;
-      @include default-transition();
+      @include transition();
       &:hover {
         color:$navbar-top-link-color-hover;
         text-decoration:none;
@@ -82,7 +82,7 @@ section.container, section.container-fluid {
         margin-bottom: -.1em;
         font-size: 1.5em;
         color: $dark-color;
-        margin-right:.4vw;
+        margin-right:($default-x / 20);
       }
 
     }
@@ -110,7 +110,7 @@ section.container, section.container-fluid {
         text-transform: uppercase;
         color:$navbar-link-color;
         padding:1.5vh 1.5vw;
-        @include default-transition();
+        @include transition();
         &:hover {
           color:$navbar-link-color-hover;
         }
@@ -129,9 +129,7 @@ header {
   margin-top:70px;
   height: 100%;
   background:url('../img/man-in-sofa.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  @include background-img();
   color:$light-color;
   .icon {
     font-size: 1.5em;
@@ -188,7 +186,7 @@ section.welcome {
 
 section.your-idea {
   %pdn {
-    padding: ($default-margin-y * 2) 7vw;
+    padding: ($default-y * 2) ($default-x / 1.4);
     flex:1;
   }
   // @include bg-fifty-fifty($custom-primary,$dark-color);
@@ -243,7 +241,7 @@ section.your-idea {
 }
 
 section.portofolio {
-  padding: ($default-margin-y * 1.5) $default-margin-x;
+  padding: ($default-y * 1.5) 0;
   h3 {
     color:darken($light-color, 40%);
     font-size:1em;
@@ -252,7 +250,7 @@ section.portofolio {
     font-weight: 600;
   }
   .card-deck {
-    margin-bottom: ($default-margin-y / 3);
+    margin-bottom: ($default-y / 3);
   }
   .card {
     text-align: center;
@@ -279,7 +277,7 @@ section.features {
     font-weight: 600;
   }
   .card-deck {
-    margin-bottom: ($default-margin-y / 2);
+    margin-bottom: ($default-y / 2);
   }
   .card {
     background:transparent;
@@ -288,7 +286,7 @@ section.features {
     svg {
       color:$custom-primary;
       font-size:3.5em;
-      margin-bottom: ($default-margin-y / 4);
+      margin-bottom: ($default-y / 4);
     }
     h4 {
       font-size:1.2em;
@@ -305,14 +303,12 @@ section.overview {
   background:
         linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
         url('../img/mountain-1.jpg');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  @include background-img();
   padding:0px;
   color:$light-color;
 
   %pdn {
-    padding: ($default-margin-y * 2) 5vw;
+    padding: ($default-y * 2) ($default-x / 2);
     flex:1;
   }
   .col-left {
@@ -324,7 +320,7 @@ section.overview {
       background-color: $light-color;
       color:$dark-color;
       border-width: 2px;
-      @include default-transition();
+      @include transition();
       &:hover{
         background-color: $dark-color;
         color:$light-color;
@@ -336,7 +332,7 @@ section.overview {
 
     .btn {
       background-color: transparent;
-      @include default-transition();
+      @include transition();
       border-color: $light-color;
       border-width: 2px;
       &:hover{
@@ -359,14 +355,100 @@ section.overview {
   }
   .card-title {
     font-weight:700;
-    margin-bottom:($default-margin-y / 1.2);
+    margin-bottom:($default-y / 1.2);
   }
   .card-text {
     font-weight: 300;
     font-size:.9em;
-    margin-bottom:($default-margin-y / 1.2);
+    margin-bottom:($default-y / 1.2);
   }
 
+}
+
+section.update {
+  padding: ($default-y * 1.5) 0;
+  h3 {
+    color:darken($light-color, 40%);
+    font-size:1em;
+  }
+  h2 {
+    font-weight: 600;
+  }
+  hr {
+    margin:($default-y / 3) 0;
+    width:($default-x / 2);
+  }
+  p {
+    font-weight: 300;
+    font-size:.9em;
+    margin-bottom:$default-y;
+  }
+  img {
+    height:100%;
+  }
+  .col-right {
+    padding-right: $default-x;
+  }
+}
+
+section.number {
+  padding: ($default-y * 1.5) 0;
+  color:$light-color;
+  background: url('../img/sky-with-stars.jpg');
+  @include background-img();
+
+  .card {
+    background-color: transparent;
+    padding:($default-mp * .7);
+    border:1px solid darken($light-color,60%);
+    @include transition();
+    .card-top {
+      font-size: 3em;
+    }
+    .card-body{
+      padding:0;
+
+      .card-title{
+        font-size: 1.7em;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+
+    }
+    &:hover {
+      background-color: $light-color;
+      color:$dark-color;
+    }
+  }
+
+  h3 {
+    color:darken($light-color, 20%);
+    font-size:1.2em;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-weight: 600;
+    margin-bottom: ($default-y / 2.5)
+  }
+  p {
+    font-weight: 300;
+    font-size:.9em;
+  }
+  .col-right {
+    padding-right:$default-y;
+  }
+
+}
+
+section.blog {
+  padding: ($default-y * 1.5) 0;
+  h3 {
+    color:darken($light-color, 40%);
+    font-size:1.2em;
+  }
+  h2 {
+    font-weight: 600;
+  }
 }
 
 section.partner {

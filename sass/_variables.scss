@@ -15,6 +15,9 @@ $navbar-font-size:0.75em;
 
 //background
 $bg-color-light:rgba(255,255,255,1);
+$default-bg-position: center;
+$default-bg-size:cover;
+$default-bg-attachment:fixed;
 
 // Text
 $main-font: 'Poppins', sans-serif;
@@ -25,6 +28,7 @@ $default-transition-properties: all;
 $default-transition-duration: .2s;
 $default-transition-effect: ease-in-out;
 
-//
-$default-margin-y:10vh;
-$default-margin-x:0vw;
+// Margin & Padding
+$default-mp:50px;
+$default-y:10vh;
+$default-x:10vw;

@@ -41,7 +41,7 @@ hr {
     color: white; }
 
 section.container, section.container-fluid {
-  padding: 10vh 0vw; }
+  padding: 10vh 0; }
 
 /*** Styling ***/
 .mainNav {
@@ -62,7 +62,7 @@ section.container, section.container-fluid {
         margin-bottom: -.1em;
         font-size: 1.5em;
         color: #0a0a0a;
-        margin-right: .4vw; }
+        margin-right: 0.5vw; }
     .mainNav .mainNavTop .phone {
       border-right: 1px solid #dbdbdb; }
     .mainNav .mainNavTop .address a {
@@ -89,8 +89,8 @@ header {
   margin-top: 70px;
   height: 100%;
   background: url("../img/man-in-sofa.jpg");
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   color: white; }
   header .icon {
@@ -127,7 +127,7 @@ section.welcome {
       margin: 0 auto; }
 
 section.your-idea .col-left, section.your-idea .col-right, section.your-idea section.overview .col-center, section.overview section.your-idea .col-center {
-  padding: 20vh 7vw;
+  padding: 20vh 7.1428571429vw;
   -webkit-box-flex: 1;
           flex: 1; }
 section.your-idea .col-left {
@@ -163,7 +163,7 @@ section.your-idea .row {
     border-radius: 0px; }
 
 section.portofolio {
-  padding: 15vh 0vw; }
+  padding: 15vh 0; }
   section.portofolio h3 {
     color: #999999;
     font-size: 1em; }
@@ -247,6 +247,69 @@ section.overview {
     font-weight: 300;
     font-size: .9em;
     margin-bottom: 8.3333333333vh; }
+
+section.update {
+  padding: 15vh 0; }
+  section.update h3 {
+    color: #999999;
+    font-size: 1em; }
+  section.update h2 {
+    font-weight: 600; }
+  section.update hr {
+    margin: 3.3333333333vh 0;
+    width: 5vw; }
+  section.update p {
+    font-weight: 300;
+    font-size: .9em;
+    margin-bottom: 10vh; }
+  section.update img {
+    height: 100%; }
+  section.update .col-right {
+    padding-right: 10vw; }
+
+section.number {
+  padding: 15vh 0;
+  color: white;
+  background: url("../img/sky-with-stars.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  section.number .card {
+    background-color: transparent;
+    padding: 35px;
+    border: 1px solid #666666;
+    transition: all 0.2s ease-in-out; }
+    section.number .card .card-top {
+      font-size: 3em; }
+    section.number .card .card-body {
+      padding: 0; }
+      section.number .card .card-body .card-title {
+        font-size: 1.7em;
+        font-weight: 700;
+        margin-bottom: 0; }
+    section.number .card:hover {
+      background-color: white;
+      color: #0a0a0a; }
+  section.number h3 {
+    color: #cccccc;
+    font-size: 1.2em;
+    margin-bottom: 0; }
+  section.number h2 {
+    font-weight: 600;
+    margin-bottom: 4vh; }
+  section.number p {
+    font-weight: 300;
+    font-size: .9em; }
+  section.number .col-right {
+    padding-right: 10vh; }
+
+section.blog {
+  padding: 15vh 0; }
+  section.blog h3 {
+    color: #999999;
+    font-size: 1.2em; }
+  section.blog h2 {
+    font-weight: 600; }
 
 section.partner img {
   width: 50px; }
